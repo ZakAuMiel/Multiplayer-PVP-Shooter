@@ -7,6 +7,10 @@
 /[Ll]ogs/
 /[Uu]nityGenerated/
 /[Uu]nityPackageManager/
+// ajoute les plugins de l'asset store 
+/Assets/Plugins/Editor/Android/
+/Assets/Plugins/Editor/iOS/
+/Assets/Plugins/Editor/Windows/
 
 # Visual Studio / MonoDevelop generated files
 /*.sln
