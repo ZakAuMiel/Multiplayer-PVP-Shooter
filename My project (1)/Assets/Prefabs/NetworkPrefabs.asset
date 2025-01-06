@@ -15,4 +15,5 @@ MonoBehaviour:
   autoGenerate: 1
   networkOnly: 1
   folder: {fileID: 102900000, guid: 3ba578c9ac2efcf4ca222e3c4761ed38, type: 3}
-  prefabs: []
+  prefabs:
+  - {fileID: 5076824468300254803, guid: 6d12dda121705cd4cb18807c74b5abb9, type: 3}
