@@ -84,7 +84,6 @@ public class PlayerController : NetworkBehaviour
         characterController.Move(velocity * Time.deltaTime);
 
         //Handle animations
-
         animator.SetFloat("Forward", vertical);
         animator.SetFloat("Sideways", horizontal);
     }
