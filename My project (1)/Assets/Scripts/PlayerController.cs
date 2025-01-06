@@ -19,6 +19,7 @@ public class PlayerController : NetworkBehaviour
 
     [Header("References")]
     [SerializeField] private CinemachineCamera playerCamera;
+    [SerializeField] private NetworkAnimator animator;
     
     private CharacterController characterController;
     private Vector3 velocity;
@@ -81,6 +82,10 @@ public class PlayerController : NetworkBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         characterController.Move(velocity * Time.deltaTime);
+
+        //Handle animations
+        animator.SetFloat("Forward", vertical);
+        animator.SetFloat("Sideways", horizontal);
     }
 
     private void HandleRotation()
