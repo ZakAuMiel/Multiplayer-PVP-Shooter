@@ -1,5 +1,6 @@
 
 using PurrNet;
+using Unity.Cinemachine;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -17,7 +18,7 @@ public class PlayerController : NetworkBehaviour
     [SerializeField] private float maxLookAngle = 80f;
 
     [Header("References")]
-    [SerializeField] private Camera playerCamera;
+    [SerializeField] private CinemachineCamera playerCamera;
     
     private CharacterController characterController;
     private Vector3 velocity;
@@ -28,8 +29,7 @@ public class PlayerController : NetworkBehaviour
         base.OnSpawned();
 
         enabled = isOwner;
-        if(!isOwner)
-            Destroy(playerCamera.gameObject);
+        playerCamera.gameObject.SetActive(isOwner);
     }
 
     private void OnDisable()
