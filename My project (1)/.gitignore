@@ -1,0 +1,70 @@
+# Exclure les fichiers générés automatiquement par Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Exclure les fichiers des packages locaux
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Exclure les fichiers des systèmes de contrôle de version
+.vscode/
+.idea/
+*.orig
+
+# Exclure les fichiers locaux
+.DS_Store
+*.swp
+*.bak
+*.backup
+*.tmp
+*.temp
+*.gid
+
+# Exclure les fichiers et dossiers des builds
+*.apk
+*.aab
+*.ipa
+*.exe
+*.app
+*.msi
+*.zip
+*.tar.gz
+*.7z
+
+# Exclure tout ce qui est lié à ParrelSync
+*/_clone_*/
+*/_clone_*/**
+
+# Inclure les fichiers essentiels pour Unity (ne pas les exclure)
+!Assets/
+!ProjectSettings/
+!Packages/
+
+# Exclure les fichiers des Assets Bundles générés localement
+*.unitypackage
+*.assetbundle
+
+# Ignorer le répertoire "Library" dans tous les projets
+**/Library/
+
+# Ignorer le répertoire "_clone_0" créé par ParrelSync
+**/_clone_0/
+
+# Ignorer spécifiquement "My project (1)_clone_0"
+My\ project\ \(1\)_clone_0/
+My\ project\ \(1\)_clone_0/**
+
+
